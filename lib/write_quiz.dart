@@ -55,7 +55,7 @@ class WriteQuiz extends GetView<WriteController> {
         "question": "심청전에서 심청이가 빠진 곳은 어디일까요?",
         "answer1": '인담수',
         "answer2": '심담수',
-        "answer3": '인당수',
+        "answer3": '인당수', 
         "answer4": '임담수',
         "answer5": '심당수',
         "realAnswer": '인당수',
