@@ -1,8 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
+import 'package:quiz/controller/drawing_controller.dart';
 import 'package:quiz/controller/number_controller.dart';
 import 'package:quiz/controller/self_controller.dart';
 import 'package:quiz/controller/write_controller.dart';
+import 'package:quiz/drawing_page.dart';
 import 'package:quiz/main_page.dart';
 import 'package:quiz/number_quiz.dart';
 import 'package:quiz/quiz_page.dart';
@@ -24,8 +26,10 @@ class MyApp extends StatelessWidget {
             Get.lazyPut(() => NumberController(), fenix: true);
             Get.lazyPut(() => WriteController(), fenix: true);
             Get.lazyPut(() => SelfController(), fenix: true);
+            Get.lazyPut(() => DrawingController(), fenix: true);
           }),
-      home: SelfQuizPage(),
+      home: DrawingPage(),
+      // home: SelfQuizPage(),
       // home: NumberQuiz(),
       // home: QuizPage(),
     );
